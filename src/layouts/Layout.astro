@@ -16,8 +16,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="font-mono">
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
+	<body class="font-mono relative">
+		<div class="absolute top-0 z-[-2] w-full h-full min-h-screen max-w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
 		<slot />
 	</body>
 </html>
+
+<style>
+	*{
+		color-scheme: light dark;
+	}
+</style>
