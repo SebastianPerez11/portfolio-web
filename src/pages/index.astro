@@ -8,19 +8,23 @@ import Js from "../icons/Js.astro";
 import Tailwind from "../icons/Tailwind.astro";
 import AstroJs from "../icons/AstroJs.astro";
 import New from "../icons/New.astro";
+import User from "../icons/User.astro";
+import Web from "../icons/Web.astro";
+import Code from "../icons/Code.astro";
+import Call from "../icons/Call.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Sebastian Perez - Frontend Developer.">
   <main>
     <header class="w-full flex justify-center py-10 px-96 sticky">
       <nav
-        class="w-full max-w-[1280px] flex justify-center gap-20 text-white text-lg"
+        class="w-full max-w-[1280px] flex justify-center gap-20 text-white text-xl"
       >
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Experiencia</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="/">Inicio</a>
+        <a href="#sobremi">Sobre mi</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
@@ -53,16 +57,17 @@ import New from "../icons/New.astro";
       </article>
     </section>
 
-    <section class="w-full h-full flex justify-center py-12 px-96">
+    <section id="sobremi" class="w-full h-full flex justify-center py-12 px-96">
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
-        <header class="w-full text-2xl 2xl:text-3xl">
+        <header class="w-full flex items-center gap-3 text-2xl 2xl:text-3xl">
+          <User />
           <h3>Sobre mi</h3>
         </header>
         <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
           <div
-            class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="w-full flex flex-col justify-center p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <h5
               class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -78,7 +83,7 @@ import New from "../icons/New.astro";
           </div>
 
           <div
-            class="w-full row-span-2 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700"
+            class="w-full h-full flex item flex-col justify-center row-span-2 p-6 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700"
           >
             <h5
               class="mb-3 text-sm font-semibold text-gray-900 md:text-2xl dark:text-white"
@@ -141,7 +146,7 @@ import New from "../icons/New.astro";
           </div>
 
           <div
-            class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-full p-6 flex flex-col justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <h5
               class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -161,7 +166,7 @@ import New from "../icons/New.astro";
               <li
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
-                <span class="flex-1 text-cyan-400 whitespace-nowrap"
+                <span class="flex-1 text-cyan-500 whitespace-nowrap"
                   >Trabajo en equipo</span
                 >
               </li>
@@ -173,7 +178,7 @@ import New from "../icons/New.astro";
               <li
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
-                <span class="flex-1 text-cyan-400 whitespace-nowrap"
+                <span class="flex-1 text-cyan-500 whitespace-nowrap"
                   >Resolucion de conflictos</span
                 >
               </li>
@@ -188,12 +193,15 @@ import New from "../icons/New.astro";
       </article>
     </section>
 
-    <section class="w-full h-full flex justify-center py-16 px-96">
+    <section
+      id="proyectos"
+      class="w-full h-full flex justify-center py-16 px-96"
+    >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
-        <header class="w-full text-2xl 2xl:text-3xl">
-          <h3>Proyectos</h3>
+        <header class="w-full flex gap-3 text-2xl 2xl:text-3xl">
+          <Code /><h3>Proyectos</h3>
         </header>
 
         <footer>
@@ -209,7 +217,7 @@ import New from "../icons/New.astro";
               />
             </picture>
 
-            <header class="p-6 w-full">
+            <header class="w-full flex flex-col justify-center p-6">
               <h5 class="mb-4 text-2xl font-semibold">
                 Fresh Img - <span class="text-cyan-400">Aplicacion Web</span>
               </h5>
@@ -257,7 +265,7 @@ import New from "../icons/New.astro";
               />
             </picture>
 
-            <header class="p-6 w-full">
+            <header class="w-full flex flex-col justify-center p-6">
               <h5 class="mb-4 text-2xl font-semibold">
                 Forbici Stilisti - <span class="text-pink-400"
                   >Landing Page</span
@@ -280,7 +288,7 @@ import New from "../icons/New.astro";
                 contiene un diseño moderno, minimalista y con un alto
                 rendimiento.
               </p>
-              <div class="w-full flex gap-3">
+              <div class="w-full flex gap-3 flex-grow-1">
                 <a
                   class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-1 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://forbicistilisti.netlify.app/"
@@ -307,7 +315,7 @@ import New from "../icons/New.astro";
               />
             </picture>
 
-            <header class="p-6 w-full">
+            <header class="w-full flex flex-col justify-center p-6">
               <h5 class="mb-4 text-2xl font-semibold">
                 Misión Salta - <span class="text-blue-400">Landing Page</span>
               </h5>
@@ -351,18 +359,21 @@ import New from "../icons/New.astro";
       </article>
     </section>
 
-    <section class="w-full h-full flex justify-center py-16 px-96">
+    <section
+      id="experiencia"
+      class="w-full h-full flex justify-center py-16 px-96"
+    >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
-        <header class="w-full text-2xl 2xl:text-3xl">
-          <h3>Experiencia</h3>
+        <header class="w-full flex items-center gap-3 text-2xl 2xl:text-3xl">
+          <Web /><h3>Experiencia</h3>
         </header>
         <footer
           class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <ol class="relative border-s border-gray-200 dark:border-gray-700">
-            <li class="mb-10 ms-4">
+            <li class="ms-4">
               <div
                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
               >
@@ -385,7 +396,7 @@ import New from "../icons/New.astro";
                 desarrollo optimo, utilizando buenas practias, tanto en el
                 enmaquetado, el estilado y el analisis pre-desarrollo de la web.
               </p>
-              <p
+              <!-- <p
                 class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
               >
                 Recibi una mentoria por parte de un Diseñador UX-UI profesional,
@@ -393,7 +404,7 @@ import New from "../icons/New.astro";
                 Salta, adquiri nuevos conocimientos de como realizar un
                 desarrollo optimo, utilizando buenas practias, tanto en el
                 enmaquetado, el estilado y el analisis pre-desarrollo de la web.
-              </p>
+              </p> -->
               <a
                 href="#"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
@@ -418,14 +429,22 @@ import New from "../icons/New.astro";
       </article>
     </section>
 
-    <section class="w-full h-full flex justify-center py-16 px-96">
+    <section
+      id="contacto"
+      class="w-full h-full flex justify-center py-16 px-96"
+    >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
-        <header class="w-full text-2xl 2xl:text-3xl">
-          <h3>Contacto</h3>
+        <header class="w-full flex gap-3 text-2xl 2xl:text-3xl">
+          <Call/><h3>Contacto</h3>
         </header>
-        <footer></footer>
+        <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
+          <div
+            class="w-full flex flex-col justify-center p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+          </div>
+        </footer>
       </article>
     </section>
   </main>
