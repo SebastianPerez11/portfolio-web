@@ -18,19 +18,23 @@ import Cv from "../icons/Cv.astro";
 
 <Layout title="Sebastian Perez - Frontend Developer.">
   <main>
-    <header class="w-full flex justify-center py-10 px-96 sticky">
+    <header
+      class="w-full flex justify-center py-10 sm:px-14 xl:px-56 2xl:px-96 sticky"
+    >
       <nav
-        class="w-full max-w-[1280px] flex justify-center gap-20 text-white text-xl"
+        class="w-full max-w-[1280px] flex justify-center gap-20 text-white sm:text-lg xl:text-xl"
       >
-        <a href="/">Inicio</a>
-        <a href="#sobremi">Sobre mi</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#contacto">Contacto</a>
+        <a class="hover:text-cyan-400" href="/">Inicio</a>
+        <a class="hover:text-cyan-400" href="#sobremi">Sobre mi</a>
+        <a class="hover:text-cyan-400" href="#proyectos">Proyectos</a>
+        <a class="hover:text-cyan-400" href="#experiencia">Experiencia</a>
+        <a class="hover:text-cyan-400" href="#contacto">Contacto</a>
       </nav>
     </header>
 
-    <section class="w-full h-full flex justify-center py-12 px-96">
+    <section
+      class="w-full h-full flex justify-center py-12 sm:px-14 xl:px-56 2xl:px-96"
+    >
       <article
         class="w-full h-full p-6 flex flex-col gap-5 justify-between items-center max-w-[1280px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
       >
@@ -68,7 +72,10 @@ import Cv from "../icons/Cv.astro";
       </article>
     </section>
 
-    <section id="sobremi" class="w-full h-full flex justify-center py-12 px-96">
+    <section
+      id="sobremi"
+      class="w-full h-full flex justify-center py-12 sm:px-14 xl:px-56 2xl:px-96"
+    >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
@@ -86,7 +93,7 @@ import Cv from "../icons/Cv.astro";
               Estudios
             </h5>
             <p
-              class="font-normal text-sm 2xl:text-base text-gray-700 dark:text-gray-400"
+              class="font-normal text-sm 2xl:text-base text-gray-700 dark:text-gray-200"
             >
               Desarrollo Web Front End y estudiante en la carrera terciaria en
               Analisis de Sistemas Informaticos.
@@ -102,7 +109,7 @@ import Cv from "../icons/Cv.astro";
               Tecnologias
             </h5>
             <p
-              class="text-sm 2xl:text-base font-normal text-gray-500 dark:text-gray-400"
+              class="text-sm 2xl:text-base font-normal text-gray-500 dark:text-gray-200"
             >
               Domino las siguientes Tecnologias:
             </p>
@@ -159,7 +166,7 @@ import Cv from "../icons/Cv.astro";
             >
               Habilidades Sociales
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
+            <p class="font-normal text-gray-700 dark:text-gray-200">
               Destaco las siguientes habilidades blandas:
             </p>
 
@@ -201,7 +208,7 @@ import Cv from "../icons/Cv.astro";
 
     <section
       id="proyectos"
-      class="w-full h-full flex justify-center py-16 px-96"
+      class="w-full h-full flex justify-center py-12 sm:px-14 xl:px-56 2xl:px-96"
     >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
@@ -216,9 +223,9 @@ import Cv from "../icons/Cv.astro";
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
-                class="object-cover w-full aspect-video rounded-s-lg transition-transform hover:scale-105"
-                src="/img/proyect-one.jpg"
-                alt="Fresh-Img"
+                class="object-cover w-full h-64 min-h-full aspect-video rounded-s-lg transition-transform hover:scale-105"
+                src="/proyectos/proyect-one.webp"
+                alt="Fresh Img - Aplicacion Web"
                 title="Fresh Img"
               />
             </picture>
@@ -239,7 +246,9 @@ import Cv from "../icons/Cv.astro";
                   <Tailwind class="w-5" />Tailwind Css</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
+              <p
+                class="mb-4 font-normal text-pretty text-gray-700 dark:text-gray-200"
+              >
                 Aplicacion Web, simulando un repositorio de Wallpapers, se
                 utilizo la API de View Transition junto Astro y sus paginas
                 dinamicas.
@@ -248,12 +257,14 @@ import Cv from "../icons/Cv.astro";
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://fresh-img-web.netlify.app/"
-                  target="_blank"><New />Ver Sitio</a
+                  target="_blank"
+                  title="Ir al Sitio"><New />Ver Sitio</a
                 >
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/SebastianPerez11/fresh-img-web"
-                  target="_blank"><GitHub />Ver Repositorio</a
+                  target="_blank"
+                  title="Ir a GitHub"><GitHub />Ver Repositorio</a
                 >
               </div>
             </header>
@@ -264,10 +275,10 @@ import Cv from "../icons/Cv.astro";
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
-                class="object-cover w-full aspect-video rounded-s-lg transition-transform hover:scale-105"
-                src="/img/proyect-two.jpg"
-                alt="Fresh-Img"
-                title="Fresh Img"
+                class="object-cover w-full h-64 min-h-full aspect-video rounded-s-lg transition-transform hover:scale-105"
+                src="/proyectos/proyect-two.webp"
+                alt="Forbici Stilisti - Landing Page"
+                title="Forbici Stilisti"
               />
             </picture>
 
@@ -289,7 +300,9 @@ import Cv from "../icons/Cv.astro";
                   <Tailwind class="w-5" />Tailwind Css</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
+              <p
+                class="mb-4 font-normal text-pretty text-gray-700 dark:text-gray-200"
+              >
                 Landing Page estatica de la peluqueria Forbici Stilisti,
                 contiene un diseño moderno, minimalista y con un alto
                 rendimiento.
@@ -298,12 +311,14 @@ import Cv from "../icons/Cv.astro";
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://forbicistilisti.netlify.app/"
-                  target="_blank"><New />Ver Sitio</a
+                  target="_blank"
+                  title="Ir al Sitio"><New />Ver Sitio</a
                 >
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/SebastianPerez11/landing-page-forbici"
-                  target="_blank"><GitHub />Ver Repositorio</a
+                  target="_blank"
+                  title="Ir a GitHub"><GitHub />Ver Repositorio</a
                 >
               </div>
             </header>
@@ -314,10 +329,10 @@ import Cv from "../icons/Cv.astro";
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
-                class="object-cover w-full h-full aspect-video rounded-s-lg transition-transform hover:scale-105"
-                src="/img/proyect-three.jpg"
-                alt="Fresh-Img"
-                title="Fresh Img"
+                class="object-cover w-full h-64 min-h-full aspect-video rounded-s-lg transition-transform hover:scale-105"
+                src="/proyectos/proyect-three.webp"
+                alt="Misión Salta - Landing Page"
+                title="Misión Salta"
               />
             </picture>
 
@@ -342,7 +357,9 @@ import Cv from "../icons/Cv.astro";
                   <Js class="w-5" />JavaScript</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
+              <p
+                class="mb-4 font-normal text-pretty text-gray-700 dark:text-gray-200"
+              >
                 Landing page de la ONG Misión Salta del Instituto Cristo Obrero
                 que brinda servicios de consultorias para el crecimiento digital
                 de emprendedores, emprendimientos o marcas personales.
@@ -351,12 +368,14 @@ import Cv from "../icons/Cv.astro";
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://mision-salta-landing-dev.vercel.app/"
-                  target="_blank"><New />Ver Sitio</a
+                  target="_blank"
+                  title="Ir al Sitio"><New />Ver Sitio</a
                 >
                 <a
                   class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/leoromero97/mision-salta-landing"
-                  target="_blank"><GitHub />Ver Repositorio</a
+                  target="_blank"
+                  title="Ir a GitHub"><GitHub />Ver Repositorio</a
                 >
               </div>
             </header>
@@ -367,7 +386,7 @@ import Cv from "../icons/Cv.astro";
 
     <section
       id="experiencia"
-      class="w-full h-full flex justify-center py-16 px-96"
+      class="w-full h-full flex justify-center py-12 sm:px-14 xl:px-56 2xl:px-96"
     >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
@@ -393,17 +412,23 @@ import Cv from "../icons/Cv.astro";
               >
                 Landing Page ONG "Misión Salta"
               </h3>
-              <p class="mb-2 font-normal text-gray-600 dark:text-gray-200">
+              <p
+                class="text-pretty mb-2 font-normal text-gray-600 dark:text-gray-200"
+              >
                 Recibi una mentoria por parte de un Diseñador UX-UI profesional,
                 desarrollamos en conjunto una landing page para la ONG Misión
                 Salta.
               </p>
-              <p class="mb-2 font-normal text-gray-600 dark:text-gray-200">
+              <p
+                class="text-pretty mb-2 font-normal text-gray-600 dark:text-gray-200"
+              >
                 Adquiri nuevos conocimientos de como realizar un desarrollo
                 optimo, utilizando buenas practias, tanto en el enmaquetado, el
                 estilado y el analisis pre-desarrollo de una web.
               </p>
-              <p class="text-base font-normal text-gray-600 dark:text-gray-200">
+              <p
+                class="text-pretty text-base font-normal text-gray-600 dark:text-gray-200"
+              >
                 Ademas conoci diferentes tecnologias y herramientas que me
                 facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
                 Figma, Metodologias, Diseños limpios y Accesibles)
@@ -434,7 +459,7 @@ import Cv from "../icons/Cv.astro";
 
     <section
       id="contacto"
-      class="w-full h-full flex justify-center py-16 px-96"
+      class="w-full h-full flex justify-center py-12 sm:px-14 xl:px-56 2xl:px-96"
     >
       <article
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
@@ -447,7 +472,7 @@ import Cv from "../icons/Cv.astro";
             class="w-full flex flex-col gap-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <p
-              class="font-normal text-sm 2xl:text-lg text-gray-700 dark:text-white"
+              class="font-normal text-pretty text-sm 2xl:text-lg text-gray-700 dark:text-white"
             >
               Si buscan a alguien apasionado, responsable, que aporte valor,
               busque mejorar y seguir aprendiendo podes contactarme.
