@@ -12,7 +12,8 @@ import User from "../icons/User.astro";
 import Web from "../icons/Web.astro";
 import Code from "../icons/Code.astro";
 import Call from "../icons/Call.astro";
-import Mail from "../icons/Mail.astro"
+import Mail from "../icons/Mail.astro";
+import Cv from "../icons/Cv.astro";
 ---
 
 <Layout title="Sebastian Perez - Frontend Developer.">
@@ -47,12 +48,21 @@ import Mail from "../icons/Mail.astro"
           <a
             class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
             href="https://github.com/SebastianPerez11"
-            target="_blank"><GitHub />GitHub</a
+            target="_blank"
+            rel="noopener noreferrer"><GitHub />GitHub</a
           >
           <a
             class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
             href="https://www.linkedin.com/in/sebastian-perezz/"
-            target="_blank"><Linkedin />Linkedin</a
+            target="_blank"
+            rel="noopener noreferrer"><Linkedin />Linkedin</a
+          >
+
+          <a
+            class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+            href="https://www.dropbox.com/scl/fi/xdcjl8e0ren7ou9sz7p4l/Cv.pdf?rlkey=g1cd3582egzv9gx8rcfzeyhl3&dl=0"
+            target="_blank"
+            rel="noopener noreferrer"><Cv />CV</a
           >
         </footer>
       </article>
@@ -98,50 +108,45 @@ import Mail from "../icons/Mail.astro"
             </p>
             <ul class="my-4 space-y-3">
               <li>
-                <a
-                  href="#"
+                <div
                   class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <Html class="w-6" />
                   <span class="flex-1 ms-3 whitespace-nowrap">HTML5</span>
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <div
                   class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <Css class="w-6" />
                   <span class="flex-1 ms-3 whitespace-nowrap">Css3</span>
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <div
                   class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <Js class="w-6" />
                   <span class="flex-1 ms-3 whitespace-nowrap">JavaScript</span>
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <div
                   class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <Tailwind class="w-6" />
                   <span class="flex-1 ms-3 whitespace-nowrap">Tailwind Css</span
                   >
-                </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <div
                   class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <AstroJs class="w-6" />
                   <span class="flex-1 ms-3 whitespace-nowrap">Astro Js</span>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -207,7 +212,7 @@ import Mail from "../icons/Mail.astro"
 
         <footer>
           <div
-            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
@@ -224,29 +229,29 @@ import Mail from "../icons/Mail.astro"
               </h5>
               <div class="mb-4 flex gap-2">
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <AstroJs class="w-6" />Astro Js</span
+                  <AstroJs class="w-5" />Astro Js</span
                 >
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <Tailwind class="w-6" />Tailwind Css</span
+                  <Tailwind class="w-5" />Tailwind Css</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
                 Aplicacion Web, simulando un repositorio de Wallpapers, se
                 utilizo la API de View Transition junto Astro y sus paginas
                 dinamicas.
               </p>
               <div class="w-full flex gap-3">
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-1 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://fresh-img-web.netlify.app/"
                   target="_blank"><New />Ver Sitio</a
                 >
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/SebastianPerez11/fresh-img-web"
                   target="_blank"><GitHub />Ver Repositorio</a
                 >
@@ -255,7 +260,7 @@ import Mail from "../icons/Mail.astro"
           </div>
 
           <div
-            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
@@ -274,29 +279,29 @@ import Mail from "../icons/Mail.astro"
               </h5>
               <div class="mb-4 flex gap-2">
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <AstroJs class="w-6" />Astro Js</span
+                  <AstroJs class="w-5" />Astro Js</span
                 >
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <Tailwind class="w-6" />Tailwind Css</span
+                  <Tailwind class="w-5" />Tailwind Css</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
                 Landing Page estatica de la peluqueria Forbici Stilisti,
                 contiene un diseño moderno, minimalista y con un alto
                 rendimiento.
               </p>
               <div class="w-full flex gap-3 flex-grow-1">
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-1 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://forbicistilisti.netlify.app/"
                   target="_blank"><New />Ver Sitio</a
                 >
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/SebastianPerez11/landing-page-forbici"
                   target="_blank"><GitHub />Ver Repositorio</a
                 >
@@ -305,7 +310,7 @@ import Mail from "../icons/Mail.astro"
           </div>
 
           <div
-            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            class="overflow-hidden w-full h-full max-[1800px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <picture class="overflow-hidden min-w-[540px] w-full">
               <img
@@ -322,34 +327,34 @@ import Mail from "../icons/Mail.astro"
               </h5>
               <div class="mb-4 flex gap-2">
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <Html class="w-6" />HTML5</span
-                >
-                <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-                >
-                  <Css class="w-6" />CSS3</span
+                  <Html class="w-5" />HTML5</span
                 >
                 <span
-                  class="flex gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
-                  <Js class="w-6" />JavaScript</span
+                  <Css class="w-5" />CSS3</span
+                >
+                <span
+                  class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                >
+                  <Js class="w-5" />JavaScript</span
                 >
               </div>
-              <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-4 font-normal text-gray-700 dark:text-gray-300">
                 Landing page de la ONG Misión Salta del Instituto Cristo Obrero
                 que brinda servicios de consultorias para el crecimiento digital
                 de emprendedores, emprendimientos o marcas personales.
               </p>
               <div class="w-full flex gap-3">
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-1 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://mision-salta-landing-dev.vercel.app/"
                   target="_blank"><New />Ver Sitio</a
                 >
                 <a
-                  class="flex text-base 2xl:text-lg w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                   href="https://github.com/leoromero97/mision-salta-landing"
                   target="_blank"><GitHub />Ver Repositorio</a
                 >
@@ -380,33 +385,30 @@ import Mail from "../icons/Mail.astro"
               >
               </div>
               <time
-                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-400"
                 >Agosto 2023</time
               >
               <h3
-                class="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+                class="mb-1 text-xl font-semibold text-gray-900 dark:text-cyan-400"
               >
                 Landing Page ONG "Misión Salta"
               </h3>
-              <p
-                class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400"
-              >
+              <p class="mb-2 font-normal text-gray-600 dark:text-gray-200">
                 Recibi una mentoria por parte de un Diseñador UX-UI profesional,
                 desarrollamos en conjunto una landing page para la ONG Misión
-                Salta, adquiri nuevos conocimientos de como realizar un
-                desarrollo optimo, utilizando buenas practias, tanto en el
-                enmaquetado, el estilado y el analisis pre-desarrollo de la web.
+                Salta.
               </p>
-              <!-- <p
-                class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-              >
-                Recibi una mentoria por parte de un Diseñador UX-UI profesional,
-                desarrollamos en conjunto una landing page para la ONG Misión
-                Salta, adquiri nuevos conocimientos de como realizar un
-                desarrollo optimo, utilizando buenas practias, tanto en el
-                enmaquetado, el estilado y el analisis pre-desarrollo de la web.
-              </p> -->
-              <a
+              <p class="mb-2 font-normal text-gray-600 dark:text-gray-200">
+                Adquiri nuevos conocimientos de como realizar un desarrollo
+                optimo, utilizando buenas practias, tanto en el enmaquetado, el
+                estilado y el analisis pre-desarrollo de una web.
+              </p>
+              <p class="text-base font-normal text-gray-600 dark:text-gray-200">
+                Ademas conoci diferentes tecnologias y herramientas que me
+                facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
+                Figma, Metodologias, Diseños limpios y Accesibles)
+              </p>
+              <!-- <a
                 href="#"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                 >Learn more <svg
@@ -423,7 +425,7 @@ import Mail from "../icons/Mail.astro"
                     stroke-width="2"
                     d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                 </svg></a
-              >
+              > -->
             </li>
           </ol>
         </footer>
@@ -442,12 +444,13 @@ import Mail from "../icons/Mail.astro"
         </header>
         <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
           <div
-            class="w-full flex flex-col gap-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-full flex flex-col gap-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <p
               class="font-normal text-sm 2xl:text-lg text-gray-700 dark:text-white"
             >
-              Si buscan a alguien apasionado, responsable, que aporte valor, busque mejorar y seguir aprendiendo podes contactarme.
+              Si buscan a alguien apasionado, responsable, que aporte valor,
+              busque mejorar y seguir aprendiendo podes contactarme.
             </p>
             <footer class="w-full flex gap-3">
               <a
@@ -461,13 +464,12 @@ import Mail from "../icons/Mail.astro"
                 target="_blank"><Linkedin />Linkedin</a
               >
               <a
-              class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
-              href="mailto:sebasperez.dev@gmail.com"
-              target="_blank"><Mail />Email: sebasperez.dev@gmail.com</a
-            >
+                class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                href="https://mailto:sebasperez.dev@gmail.com"
+                target="_blank"><Mail />Email</a
+              >
             </footer>
           </div>
-
         </footer>
       </article>
     </section>
