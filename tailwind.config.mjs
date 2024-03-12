@@ -6,7 +6,7 @@ export default {
 			gridTemplateColumns: {
 				// added new 4 column grid as new4
 				'auto-fit': 'repeat(auto-fit, minmax(500px, 1fr))',
-				'auto-two': 'repeat(auto-fit, minmax(580px, 1fr))'
+				'auto-two': 'repeat(auto-fit, minmax(560px, 1fr))'
 			}
 		},
 	},
