@@ -12,6 +12,7 @@ import User from "../icons/User.astro";
 import Web from "../icons/Web.astro";
 import Code from "../icons/Code.astro";
 import Call from "../icons/Call.astro";
+import Mail from "../icons/Mail.astro"
 ---
 
 <Layout title="Sebastian Perez - Frontend Developer.">
@@ -166,7 +167,7 @@ import Call from "../icons/Call.astro";
               <li
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
-                <span class="flex-1 text-cyan-500 whitespace-nowrap"
+                <span class="flex-1 text-cyan-300 whitespace-nowrap"
                   >Trabajo en equipo</span
                 >
               </li>
@@ -178,7 +179,7 @@ import Call from "../icons/Call.astro";
               <li
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
-                <span class="flex-1 text-cyan-500 whitespace-nowrap"
+                <span class="flex-1 text-cyan-300 whitespace-nowrap"
                   >Resolucion de conflictos</span
                 >
               </li>
@@ -437,13 +438,36 @@ import Call from "../icons/Call.astro";
         class="w-full h-full flex flex-col gap-4 justify-between items-center max-w-[1280px]"
       >
         <header class="w-full flex gap-3 text-2xl 2xl:text-3xl">
-          <Call/><h3>Contacto</h3>
+          <Call /><h3>Contacto</h3>
         </header>
         <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
           <div
-            class="w-full flex flex-col justify-center p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="w-full flex flex-col gap-2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
+            <p
+              class="font-normal text-sm 2xl:text-lg text-gray-700 dark:text-white"
+            >
+              Si buscan a alguien apasionado, responsable, que aporte valor, busque mejorar y seguir aprendiendo podes contactarme.
+            </p>
+            <footer class="w-full flex gap-3">
+              <a
+                class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                href="https://github.com/SebastianPerez11"
+                target="_blank"><GitHub />GitHub</a
+              >
+              <a
+                class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                href="https://www.linkedin.com/in/sebastian-perezz/"
+                target="_blank"><Linkedin />Linkedin</a
+              >
+              <a
+              class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              href="mailto:sebasperez.dev@gmail.com"
+              target="_blank"><Mail />Email: sebasperez.dev@gmail.com</a
+            >
+            </footer>
           </div>
+
         </footer>
       </article>
     </section>
