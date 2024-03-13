@@ -25,34 +25,39 @@ import TitleSection from "../components/TitleSection.astro";
     <Header />
 
     <SectionHero id="/">
-      <header class="w-full">
-        <h1 class="text-4xl font-semibold mb-3">
+      <header class="w-full text-pretty">
+        <h1 class="2xl:text-4xl xl:text-3xl font-semibold mb-3">
           Sebastian Perez - <span class="text-cyan-400"
             >Front End Developer</span
           ><span title="Rocket">🚀</span>
         </h1>
 
-        <p class="opacity-75 text-2xl">Aportando valor en cada Desarrollo</p>
+        <p class="opacity-75 2xl:text-2xl xl:text-xl">
+          Aportando valor en cada Desarrollo
+        </p>
       </header>
 
       <footer class="w-full flex gap-3">
         <a
-          class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://github.com/SebastianPerez11"
           target="_blank"
+          title="Ir a GitHub"
           rel="noopener noreferrer"><GitHub />GitHub</a
         >
         <a
-          class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://www.linkedin.com/in/sebastian-perezz/"
           target="_blank"
+          title="Ir a Linkedin"
           rel="noopener noreferrer"><Linkedin />Linkedin</a
         >
 
         <a
-          class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://www.dropbox.com/scl/fi/xdcjl8e0ren7ou9sz7p4l/Cv.pdf?rlkey=g1cd3582egzv9gx8rcfzeyhl3&dl=0"
           target="_blank"
+          title="Descargar CV"
           rel="noopener noreferrer"><Cv />CV</a
         >
       </footer>
@@ -62,17 +67,17 @@ import TitleSection from "../components/TitleSection.astro";
       <TitleSection title="Sobre mi">
         <User />
       </TitleSection>
-      <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
+      <footer class="w-full grid grid-cols-auto-fit gap-4">
         <div
           class="w-full flex flex-col justify-center p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <h3
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-2 2xl:text-2xl xl:text-xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Estudios
           </h3>
           <p
-            class="font-normal text-sm 2xl:text-base text-gray-700 dark:text-gray-200"
+            class="font-normal 2xl:text-xl text-lg text-gray-700 dark:text-gray-200"
           >
             Desarrollo Web Front End y estudiante en la carrera terciaria en
             Analisis de Sistemas Informaticos.
@@ -83,12 +88,12 @@ import TitleSection from "../components/TitleSection.astro";
           class="w-full h-full flex item flex-col justify-center row-span-2 p-6 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700"
         >
           <h4
-            class="mb-3 text-sm font-semibold text-gray-900 md:text-2xl dark:text-white"
+            class="mb-3 2xl:text-2xl xl:text-xl font-semibold text-gray-900 md:text-2xl dark:text-white"
           >
             Tecnologias
           </h4>
           <p
-            class="text-sm 2xl:text-base font-normal text-gray-500 dark:text-gray-200"
+            class="2xl:text-xl text-lg font-normal text-gray-500 dark:text-gray-200"
           >
             Domino las siguientes Tecnologias:
           </p>
@@ -140,11 +145,13 @@ import TitleSection from "../components/TitleSection.astro";
           class="w-full p-6 flex flex-col justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-2 2xl:text-2xl xl:text-xl font-bold tracking-tight text-gray-900 dark:text-white"
           >
             Habilidades Sociales
           </h5>
-          <p class="font-normal text-gray-700 dark:text-gray-200">
+          <p
+            class="2xl:text-xl text-lg font-normal text-gray-700 dark:text-gray-200"
+          >
             Destaco las siguientes habilidades blandas:
           </p>
 
@@ -190,7 +197,7 @@ import TitleSection from "../components/TitleSection.astro";
 
       <footer class="grid grid-cols-auto-two gap-4">
         <div
-          class="overflow-hidden h-full w-full max-[1400px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden h-full w-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -203,7 +210,7 @@ import TitleSection from "../components/TitleSection.astro";
           </picture>
 
           <header class="w-full flex flex-col justify-center p-6">
-            <h5 class="mb-4 text-2xl font-semibold">
+            <h5 class="mb-4 2xl:text-2xl xl:text-xl font-semibold">
               Fresh Img - <span class="text-cyan-400">Aplicacion Web</span>
             </h5>
             <div class="mb-4 flex gap-2">
@@ -226,13 +233,13 @@ import TitleSection from "../components/TitleSection.astro";
             </p>
             <div class="w-full flex gap-3">
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://fresh-img-web.netlify.app/"
                 target="_blank"
                 title="Ir al Sitio"><New />Ver Sitio</a
               >
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://github.com/SebastianPerez11/fresh-img-web"
                 target="_blank"
                 title="Ir a GitHub"><GitHub />Ver Repositorio</a
@@ -242,7 +249,7 @@ import TitleSection from "../components/TitleSection.astro";
         </div>
 
         <div
-          class="overflow-hidden w-full h-full max-[1400px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -255,7 +262,7 @@ import TitleSection from "../components/TitleSection.astro";
           </picture>
 
           <header class="w-full flex flex-col justify-center p-6">
-            <h5 class="mb-4 text-2xl font-semibold">
+            <h5 class="mb-4 2xl:text-2xl xl:text-xl font-semibold">
               Forbici Stilisti - <span class="text-pink-400">Landing Page</span>
             </h5>
             <div class="mb-4 flex gap-2">
@@ -278,13 +285,13 @@ import TitleSection from "../components/TitleSection.astro";
             </p>
             <div class="w-full flex gap-3 flex-grow-1">
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://forbicistilisti.netlify.app/"
                 target="_blank"
                 title="Ir al Sitio"><New />Ver Sitio</a
               >
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://github.com/SebastianPerez11/landing-page-forbici"
                 target="_blank"
                 title="Ir a GitHub"><GitHub />Ver Repositorio</a
@@ -294,7 +301,7 @@ import TitleSection from "../components/TitleSection.astro";
         </div>
 
         <div
-          class="overflow-hidden w-full h-full max-[1400px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -307,7 +314,7 @@ import TitleSection from "../components/TitleSection.astro";
           </picture>
 
           <header class="w-full flex flex-col justify-center p-6">
-            <h5 class="mb-4 text-2xl font-semibold">
+            <h5 class="mb-4 2xl:text-2xl xl:text-xl font-semibold">
               Misión Salta - <span class="text-blue-400">Landing Page</span>
             </h5>
             <div class="mb-4 flex gap-2">
@@ -336,13 +343,13 @@ import TitleSection from "../components/TitleSection.astro";
             </p>
             <div class="w-full flex gap-3">
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://mision-salta-landing-dev.vercel.app/"
                 target="_blank"
                 title="Ir al Sitio"><New />Ver Sitio</a
               >
               <a
-                class="flex text-base w-fit items-center gap-2 py-2 px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                class="flex text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 href="https://github.com/leoromero97/mision-salta-landing"
                 target="_blank"
                 title="Ir a GitHub"><GitHub />Ver Repositorio</a
@@ -371,26 +378,26 @@ import TitleSection from "../components/TitleSection.astro";
               >Agosto 2023</time
             >
             <h5
-              class="mb-1 text-xl font-semibold text-gray-900 dark:text-cyan-400"
+              class="mb-1 2xl:text-2xl xl:text-xl font-bold text-gray-900 dark:text-cyan-400"
             >
               Landing Page ONG "Misión Salta"
             </h5>
             <p
-              class="text-pretty mb-2 font-normal text-gray-600 dark:text-gray-200"
+              class="text-pretty mb-2 font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
             >
               Recibi una mentoria por parte de un Diseñador UX-UI profesional,
               desarrollamos en conjunto una landing page para la ONG Misión
               Salta.
             </p>
             <p
-              class="text-pretty mb-2 font-normal text-gray-600 dark:text-gray-200"
+              class="text-pretty mb-2 font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
             >
               Adquiri nuevos conocimientos de como realizar un desarrollo
               optimo, utilizando buenas practias, tanto en el enmaquetado, el
               estilado y el analisis pre-desarrollo de una web.
             </p>
             <p
-              class="text-pretty text-base font-normal text-gray-600 dark:text-gray-200"
+              class="text-pretty font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
             >
               Ademas conoci diferentes tecnologias y herramientas que me
               facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
@@ -428,24 +435,24 @@ import TitleSection from "../components/TitleSection.astro";
           class="w-full flex flex-col gap-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <p
-            class="font-normal text-pretty text-sm 2xl:text-lg text-gray-700 dark:text-white"
+            class="font-normal text-pretty 2xl:text-xl text-lg text-gray-700 dark:text-white"
           >
             Si buscan a alguien apasionado, responsable, que aporte valor,
             busque mejorar y seguir aprendiendo podes contactarme.
           </p>
           <footer class="w-full flex gap-3">
             <a
-              class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://github.com/SebastianPerez11"
               target="_blank"><GitHub />GitHub</a
             >
             <a
-              class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://www.linkedin.com/in/sebastian-perezz/"
               target="_blank"><Linkedin />Linkedin</a
             >
             <a
-              class="flex text-base 2xl:text-lg w-fit items-center gap-1 py-2 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://mailto:sebasperez.dev@gmail.com"
               target="_blank"><Mail />Email</a
             >
