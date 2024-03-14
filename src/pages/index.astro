@@ -26,7 +26,7 @@ import TitleSection from "../components/TitleSection.astro";
 
     <SectionHero id="/">
       <header class="w-full text-pretty">
-        <h1 class="2xl:text-4xl xl:text-3xl font-semibold mb-3">
+        <h1 class="2xl:text-4xl xl:text-3xl max-sm:text-2xl font-semibold mb-3">
           Sebastian Perez - <span class="text-cyan-400"
             >Front End Developer</span
           ><span title="Rocket">🚀</span>
@@ -39,14 +39,14 @@ import TitleSection from "../components/TitleSection.astro";
 
       <footer class="w-full flex gap-3">
         <a
-          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://github.com/SebastianPerez11"
           target="_blank"
           title="Ir a GitHub"
           rel="noopener noreferrer"><GitHub />GitHub</a
         >
         <a
-          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://www.linkedin.com/in/sebastian-perezz/"
           target="_blank"
           title="Ir a Linkedin"
@@ -54,7 +54,7 @@ import TitleSection from "../components/TitleSection.astro";
         >
 
         <a
-          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+          class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-4 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
           href="https://www.dropbox.com/scl/fi/xdcjl8e0ren7ou9sz7p4l/Cv.pdf?rlkey=g1cd3582egzv9gx8rcfzeyhl3&dl=0"
           target="_blank"
           title="Descargar CV"
@@ -67,7 +67,7 @@ import TitleSection from "../components/TitleSection.astro";
       <TitleSection title="Sobre mi">
         <User />
       </TitleSection>
-      <footer class="w-full grid grid-cols-auto-fit gap-4">
+      <footer class="w-full grid grid-cols-auto-fit max-lg:grid-cols-auto-min gap-4">
         <div
           class="w-full flex flex-col justify-center p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
@@ -77,7 +77,7 @@ import TitleSection from "../components/TitleSection.astro";
             Estudios
           </h3>
           <p
-            class="font-normal 2xl:text-xl text-lg text-gray-700 dark:text-gray-200"
+            class="font-normal 2xl:text-[19px] text-lg text-gray-700 dark:text-gray-200"
           >
             Desarrollo Web Front End y estudiante en la carrera terciaria en
             Analisis de Sistemas Informaticos.
@@ -93,7 +93,7 @@ import TitleSection from "../components/TitleSection.astro";
             Tecnologias
           </h4>
           <p
-            class="2xl:text-xl text-lg font-normal text-gray-500 dark:text-gray-200"
+            class="2xl:text-[19px] text-lg font-normal text-gray-500 dark:text-gray-200"
           >
             Domino las siguientes Tecnologias:
           </p>
@@ -150,7 +150,7 @@ import TitleSection from "../components/TitleSection.astro";
             Habilidades Sociales
           </h5>
           <p
-            class="2xl:text-xl text-lg font-normal text-gray-700 dark:text-gray-200"
+            class="2xl:text-[19px] text-lg font-normal text-gray-700 dark:text-gray-200"
           >
             Destaco las siguientes habilidades blandas:
           </p>
@@ -195,7 +195,7 @@ import TitleSection from "../components/TitleSection.astro";
         <Code />
       </TitleSection>
 
-      <footer class="grid grid-cols-auto-two gap-4">
+      <footer class="grid grid-cols-auto-max max-lg:grid-cols-auto-min gap-4">
         <div
           class="overflow-hidden h-full w-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
@@ -383,21 +383,21 @@ import TitleSection from "../components/TitleSection.astro";
               Landing Page ONG "Misión Salta"
             </h5>
             <p
-              class="text-pretty mb-2 font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
+              class="text-pretty mb-2 font-normal 2xl:text-[19px] text-lg text-gray-600 dark:text-gray-200"
             >
               Recibi una mentoria por parte de un Diseñador UX-UI profesional,
               desarrollamos en conjunto una landing page para la ONG Misión
               Salta.
             </p>
             <p
-              class="text-pretty mb-2 font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
+              class="text-pretty mb-2 font-normal 2xl:text-[19px] text-lg text-gray-600 dark:text-gray-200"
             >
               Adquiri nuevos conocimientos de como realizar un desarrollo
               optimo, utilizando buenas practias, tanto en el enmaquetado, el
               estilado y el analisis pre-desarrollo de una web.
             </p>
             <p
-              class="text-pretty font-normal 2xl:text-xl text-lg text-gray-600 dark:text-gray-200"
+              class="text-pretty font-normal 2xl:text-[19px] text-lg text-gray-600 dark:text-gray-200"
             >
               Ademas conoci diferentes tecnologias y herramientas que me
               facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
@@ -430,9 +430,9 @@ import TitleSection from "../components/TitleSection.astro";
       <TitleSection title="Contacto">
         <Call />
       </TitleSection>
-      <footer class="w-full grid grid-cols-auto-fit grid-rows-[160px] gap-4">
+      <footer class="w-full h-full grid grid-cols-auto-fit max-lg:grid-cols-auto-min  gap-4">
         <div
-          class="w-full flex flex-col gap-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="w-full h-full flex flex-col gap-3 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <p
             class="font-normal text-pretty 2xl:text-xl text-lg text-gray-700 dark:text-white"
@@ -440,19 +440,19 @@ import TitleSection from "../components/TitleSection.astro";
             Si buscan a alguien apasionado, responsable, que aporte valor,
             busque mejorar y seguir aprendiendo podes contactarme.
           </p>
-          <footer class="w-full flex gap-3">
+          <footer class="w-full h-full flex flex-wrap gap-3">
             <a
-              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-3 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://github.com/SebastianPerez11"
               target="_blank"><GitHub />GitHub</a
             >
             <a
-              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-33  rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://www.linkedin.com/in/sebastian-perezz/"
               target="_blank"><Linkedin />Linkedin</a
             >
             <a
-              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 xl:px-6 rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              class="flex 2xl:text-lg xl:text-base w-fit items-center gap-1 2xl:py-2 xl:py-1 2xl:px-8 max-xl:px-6 max-lg:px-3  rounded-lg bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               href="https://mailto:sebasperez.dev@gmail.com"
               target="_blank"><Mail />Email</a
             >
