@@ -374,50 +374,50 @@ import TitleCard from "../components/TitleCard.astro";
               class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-400"
               >Agosto 2023</time
             >
-            <h5
+            <h6
               class="mb-1 2xl:text-2xl xl:text-xl text-xl font-bold text-gray-900 dark:text-cyan-400"
             >
               Landing Page ONG "Misión Salta"
-            </h5>
+            </h6>
             <p
-              class="text-pretty mb-2 font-normal 2xl:text-[19px] text-[17px] text-gray-600 dark:text-gray-200"
+              class="text-pretty mb-2 font-normal 2xl:text-[18px] text-[17px] text-gray-600 dark:text-gray-200"
             >
               Recibi una mentoria por parte de un Diseñador UX-UI profesional,
               desarrollamos en conjunto una landing page para la ONG Misión
               Salta.
             </p>
-            <!-- <p
-              class="text-pretty mb-2 font-normal 2xl:text-[19px] text-[17px] text-gray-600 dark:text-gray-200"
+            <p
+              class="text hidden text-pretty font-normal 2xl:text-[18px] text-[17px] text-gray-600 dark:text-gray-200"
             >
               Adquiri nuevos conocimientos de como realizar un desarrollo
               optimo, utilizando buenas practias, tanto en el enmaquetado, el
               estilado y el analisis pre-desarrollo de una web.
             </p>
             <p
-              class="text-pretty font-normal 2xl:text-[19px] text-[17px] text-gray-600 dark:text-gray-200"
+              class="text hidden text-pretty mb-2 font-normal 2xl:text-[18px] text-[17px] text-gray-600 dark:text-gray-200"
             >
               Ademas conoci diferentes tecnologias y herramientas que me
               facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
               Figma, Metodologias, Diseños limpios y Accesibles)
-            </p> -->
-            <a
-              href="#"
-              class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-              >Learn more <svg
-                class="w-3 h-3 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-              </svg></a
+            </p>
+      
+            <Button id="button" content="Ver mas">
+              <svg
+              slot="right"
+              class="w-[20px] h-[20px] ms-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
             >
+              <path
+                stroke="#22D3EE"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+            </svg>
+            </Button>
           </li>
         </ol>
       </footer>
@@ -466,4 +466,17 @@ import TitleCard from "../components/TitleCard.astro";
       </footer>
     </Section>
   </main>
+  <script>
+    const button = document.querySelector("#button");
+    const texts = document.querySelectorAll(".text");
+
+    button.addEventListener("click", showText);
+
+    function showText() {
+      texts.forEach((text) => {
+        text.classList.toggle("hidden");
+        text.classList.add("mb-2")
+      });
+    }
+  </script>
 </Layout>
