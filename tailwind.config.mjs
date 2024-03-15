@@ -7,7 +7,7 @@ export default {
 				// added new 4 column grid as new4
 				'auto-fit': 'repeat(auto-fit, minmax(500px, 1fr))',
 				'auto-max': 'repeat(auto-fit, minmax(800px, 1fr))',
-				'auto-min': 'repeat(auto-fit, minmax(380px, 1fr))',
+				'auto-min': 'repeat(auto-fit, minmax(360px, 1fr))',
 				'auto-about': 'repeat(auto-fit, minmax(300px, 1fr))'
 			}
 		},
