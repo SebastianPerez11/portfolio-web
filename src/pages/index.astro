@@ -23,9 +23,8 @@ import TitleCard from "../components/TitleCard.astro";
 ---
 
 <Layout title="Sebastian Perez - Frontend Developer.">
+  <Header />
   <main id="inicio">
-    <Header />
-
     <SectionHero>
       <header class="w-full text-pretty">
         <h1 class="2xl:text-4xl xl:text-3xl text-[26px] font-semibold mb-3">
@@ -374,11 +373,11 @@ import TitleCard from "../components/TitleCard.astro";
               class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-400"
               >Agosto 2023</time
             >
-            <h6
-              class="mb-1 2xl:text-2xl xl:text-xl text-xl font-bold text-gray-900 dark:text-cyan-400"
+            <span
+              class="block mb-1 2xl:text-2xl xl:text-xl text-xl font-bold text-gray-900 dark:text-cyan-400"
             >
               Landing Page ONG "Misión Salta"
-            </h6>
+            </span>
             <p
               class="text-pretty mb-2 font-normal 2xl:text-[18px] text-[17px] text-gray-600 dark:text-gray-200"
             >
