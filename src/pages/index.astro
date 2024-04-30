@@ -20,6 +20,7 @@ import Section from "../components/Section.astro";
 import TitleSection from "../components/TitleSection.astro";
 import Button from "../components/Button.astro";
 import TitleCard from "../components/TitleCard.astro";
+import Arrow from "../icons/Arrow.astro";
 ---
 
 <Layout title="Sebastian Perez - Frontend Developer.">
@@ -44,21 +45,21 @@ import TitleCard from "../components/TitleCard.astro";
           title="Ir a GitHub"
           content="GitHub"
         >
-          <GitHub />
+          <GitHub slot="left" />
         </Button>
         <Button
           href="https://www.linkedin.com/in/sebastian-perezz/"
           title="Ir a Linkedin"
           content="Linkedin"
         >
-          <Linkedin />
+          <Linkedin slot="left" />
         </Button>
         <Button
           href="https://www.dropbox.com/scl/fi/xdcjl8e0ren7ou9sz7p4l/Cv.pdf?rlkey=g1cd3582egzv9gx8rcfzeyhl3&dl=0"
           title="Descargar CV"
           content="CV"
         >
-          <Cv />
+          <Cv slot="left" />
         </Button>
       </footer>
     </SectionHero>
@@ -71,7 +72,7 @@ import TitleCard from "../components/TitleCard.astro";
         class="w-full grid grid-cols-auto-fit max-lg:grid-cols-auto-min gap-4"
       >
         <div
-          class="w-full flex flex-col justify-center 2xl:p-6 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="w-full flex flex-col justify-center 2xl:p-8 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <TitleCard title="Estudios" />
           <p
@@ -105,7 +106,7 @@ import TitleCard from "../components/TitleCard.astro";
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
                 <Css class="w-6" />
-                <span class="flex-1 ms-3 whitespace-nowrap">Css3</span>
+                <span class="flex-1 ms-3 whitespace-nowrap">CSS3</span>
               </div>
             </li>
             <li>
@@ -121,7 +122,7 @@ import TitleCard from "../components/TitleCard.astro";
                 class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
               >
                 <Tailwind class="w-6" />
-                <span class="flex-1 ms-3 whitespace-nowrap">Tailwind Css</span>
+                <span class="flex-1 ms-3 whitespace-nowrap">Tailwind CSS</span>
               </div>
             </li>
             <li>
@@ -136,7 +137,7 @@ import TitleCard from "../components/TitleCard.astro";
         </div>
 
         <div
-          class="w-full 2xl:p-6 p-4 flex flex-col justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="w-full 2xl:p-8 p-6 flex flex-col justify-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <TitleCard title="Habilidades Sociales" />
           <p
@@ -185,9 +186,9 @@ import TitleCard from "../components/TitleCard.astro";
         <Code />
       </TitleSection>
 
-      <footer class="grid grid-cols-auto-max max-lg:grid-cols-auto-min gap-4">
+      <footer class="grid grid-cols-auto-max max-lg:grid-cols-auto-min gap-5">
         <div
-          class="overflow-hidden h-full w-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden gap-2 h-full w-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -216,7 +217,7 @@ import TitleCard from "../components/TitleCard.astro";
               >
             </div>
             <p
-              class="mb-4 font-normal text-[17px] text-pretty text-gray-700 dark:text-gray-200"
+              class="mb-4 font-normal text-[16px] text-pretty text-gray-700 dark:text-gray-200"
             >
               Aplicacion Web, simulando un repositorio de Wallpapers, se utilizo
               la API de View Transition junto Astro y sus paginas dinamicas.
@@ -227,21 +228,21 @@ import TitleCard from "../components/TitleCard.astro";
                 title="Ir al Sitio"
                 content="Ver Sitio"
               >
-                <New />
+                <New slot="left" />
               </Button>
               <Button
                 href="https://github.com/SebastianPerez11/fresh-img-web"
                 title="Ir a GitHub"
                 content="Ver Repositorio"
               >
-                <GitHub />
+                <GitHub slot="left" />
               </Button>
             </div>
           </header>
         </div>
 
         <div
-          class="overflow-hidden w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden gap-2 w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -270,7 +271,7 @@ import TitleCard from "../components/TitleCard.astro";
               >
             </div>
             <p
-              class="mb-4 font-normal text-[17px] text-pretty text-gray-700 dark:text-gray-200"
+              class="mb-4 font-normal text-[16px] text-pretty text-gray-700 dark:text-gray-200"
             >
               Landing Page estatica de la peluqueria Forbici Stilisti, contiene
               un diseño moderno, minimalista y con un alto rendimiento.
@@ -281,21 +282,21 @@ import TitleCard from "../components/TitleCard.astro";
                 title="Ir al Sitio"
                 content="Ver Sitio"
               >
-                <New />
+                <New slot="left" />
               </Button>
               <Button
                 href="https://github.com/SebastianPerez11/landing-page-forbici"
                 title="Ir a GitHub"
                 content="Ver Repositorio"
               >
-                <GitHub />
+                <GitHub slot="left" />
               </Button>
             </div>
           </header>
         </div>
 
         <div
-          class="overflow-hidden w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="overflow-hidden gap-2 w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <picture class="overflow-hidden w-full">
             <img
@@ -329,11 +330,11 @@ import TitleCard from "../components/TitleCard.astro";
               >
             </div>
             <p
-              class="mb-4 font-normal text-[17px] text-pretty text-gray-700 dark:text-gray-200"
+              class="mb-4 font-normal text-[16px] text-pretty text-gray-700 dark:text-gray-200"
             >
-              Landing page de la ONG Misión Salta del Instituto Cristo Obrero
-              que brinda servicios de consultorias para el crecimiento digital
-              de emprendedores, emprendimientos o marcas personales.
+              ONG Misión Salta del Instituto Cristo Obrero que brinda
+              principalmente información sobre el proposito, objetivo entre más
+              puntos importantes de la misión.
             </p>
             <div class="w-full flex gap-3 flex-grow-1">
               <Button
@@ -341,14 +342,68 @@ import TitleCard from "../components/TitleCard.astro";
                 title="Ir al Sitio"
                 content="Ver Sitio"
               >
-                <New />
+                <New slot="left" />
               </Button>
               <Button
                 href="https://github.com/leoromero97/mision-salta-landing"
                 title="Ir a GitHub"
                 content="Ver Repositorio"
               >
-                <GitHub />
+                <GitHub slot="left" />
+              </Button>
+            </div>
+          </header>
+        </div>
+
+        <div
+          class="overflow-hidden gap-2 w-full h-full max-[1200px]:flex-col mb-4 flex bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <picture class="overflow-hidden w-full">
+            <img
+              class="object-cover w-full h-64 min-h-full aspect-video rounded-s-lg transition-transform hover:scale-105"
+              src="/proyectos/proyect-four.webp"
+              alt="Misión Salta - Landing Page"
+              title="Misión Salta"
+              loading="lazy"
+            />
+          </picture>
+
+          <header class="w-full flex flex-col justify-center 2xl:p-6 p-4">
+            <TitleCard title="Dafa Seguros -"
+              ><span class="text-blue-600">Web Informativa</span></TitleCard
+            >
+            <div class="mb-4 flex gap-2">
+              <span
+                class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              >
+                <AstroJs class="w-5" />Astro Js</span
+              >
+              <span
+                class="flex items-center text-sm gap-1 py-1 px-3 rounded-2xl bg-gray-50 hover:bg-gray-100 hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+              >
+                <Tailwind class="w-5" />Tailwind Css</span
+              >
+            </div>
+            <p
+              class="mb-4 font-normal text-[16px] text-pretty text-gray-700 dark:text-gray-200"
+            >
+              Desarrollo de página web informativa para una empresa Productora
+              Asesora de Seguros en Argentina.
+            </p>
+            <div class="w-full flex gap-3 flex-grow-1">
+              <Button
+                href="https://dafasesoresdeseguros.com.ar/"
+                title="Ir al Sitio"
+                content="Ver Sitio"
+              >
+                <New slot="left" />
+              </Button>
+              <Button
+                href="https://github.com/SebastianPerez11/df-seguros-web"
+                title="Ir a GitHub"
+                content="Ver Repositorio"
+              >
+                <GitHub slot="left" />
               </Button>
             </div>
           </header>
@@ -361,7 +416,7 @@ import TitleCard from "../components/TitleCard.astro";
         <Web />
       </TitleSection>
       <footer
-        class="2xl:p-6 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        class="2xl:p-8 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
       >
         <ol class="relative border-s border-gray-200 dark:border-gray-700">
           <li class="ms-4">
@@ -399,23 +454,9 @@ import TitleCard from "../components/TitleCard.astro";
               facilitaron la experiencia de desarrollo (Trello, Git, GitHub,
               Figma, Metodologias, Diseños limpios y Accesibles)
             </p>
-      
+
             <Button id="button" content="Ver mas">
-              <svg
-              slot="right"
-              class="w-[16px] h-[16px] ms-2 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="#22D3EE"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-            </svg>
+              <Arrow />
             </Button>
           </li>
         </ol>
@@ -430,7 +471,7 @@ import TitleCard from "../components/TitleCard.astro";
         class="w-full h-full grid grid-cols-auto-fit max-lg:grid-cols-auto-min gap-4"
       >
         <div
-          class="w-full h-full flex flex-col gap-3 2xl:p-6 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="w-full h-full flex flex-col gap-3 2xl:p-8 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <p
             class="font-normal text-pretty 2xl:text-xl text-lg text-gray-700 dark:text-white"
@@ -444,21 +485,21 @@ import TitleCard from "../components/TitleCard.astro";
               title="Ir a GitHub"
               content="GitHub"
             >
-              <GitHub />
+              <GitHub slot="left" />
             </Button>
             <Button
               href="https://www.linkedin.com/in/sebastian-perezz/"
               title="Ir a Linkedin"
               content="Linkedin"
             >
-              <Linkedin />
+              <Linkedin slot="left" />
             </Button>
             <Button
               href="https://www.dropbox.com/scl/fi/xdcjl8e0ren7ou9sz7p4l/Cv.pdf?rlkey=g1cd3582egzv9gx8rcfzeyhl3&dl=0"
               title="Enviar Email"
               content="Email"
             >
-              <Mail />
+              <Mail slot="left" />
             </Button>
           </footer>
         </div>
@@ -474,7 +515,7 @@ import TitleCard from "../components/TitleCard.astro";
     function showText() {
       texts.forEach((text) => {
         text.classList.toggle("hidden");
-        text.classList.add("mb-2")
+        text.classList.add("mb-2");
       });
     }
   </script>
