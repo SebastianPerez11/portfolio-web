@@ -9,7 +9,7 @@ import Menu from "../icons/Menu.astro";
   <nav
     class="max-sm:hidden max-w-[1280px] py-[5px] 2xl:px-10 px-6 flex justify-center gap-16 text-white 2xl:text-xl lg:text-lg sm:text-base backdrop-blur-3xl bg-white border border-gray-200 rounded-3xl shadow dark:bg-white/10 dark:border-gray-700"
   >
-    <LinkHeader href="#body" content="Inicio" />
+    <LinkHeader href="#inicio" content="Inicio" />
     <LinkHeader href="#sobremi" content="Sobre mi" />
     <LinkHeader href="#proyectos" content="Proyectos" />
     <LinkHeader href="#experiencia" content="Experiencia" />
@@ -41,8 +41,8 @@ import Menu from "../icons/Menu.astro";
   const menu = document.querySelector("#menu");
   const nesting = document.querySelector("#nesting");
   const links = document.querySelectorAll(".links");
-  const body = document.querySelector("#body")
-  const main = document.querySelector("#inicio")
+  const body = document.querySelector("#inicio")
+  const main = document.querySelector("#main")
 
   menu.addEventListener("click", () => {
     nesting.classList.toggle("translate-x-[100%]");
